@@ -1,0 +1,6 @@
+The average values from energy, valence and danceability from this listeners' top 100 songs are, respectively, 0.65906, 0.484443 and 0.71646. Resulting in
+a sum of 1.859963.
+
+
+This way of getting the "Audio Aura" could be poor, since the music samples are only the top 100 songs, and not the whole spectrum. It could be better if
+the Aura was the sum of the average values multiplicated with a percentage of listenings, resulting in a more representive metric.

@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index:
+{% endblock %}
+
+{% block main %}
+    <div class="section">
+        <table class="container py-5 txt center">
+            <thead>
+                <tr>
+                    <th class="text-start">Type</th>
+                    <th class="text-start">Symbol</th>
+                    <th class="text-end">Price per share</th>
+                    <th class="text-end">Amount</th>
+                    <th class="text-end">Date and time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in transactions %}
+                    <tr>
+                        <td class="text-start">{{ stock.transaction_type }}</td>
+                        <td class="text-start">{{ stock.symbol }}</td>
+                        <td class="text-end">{{ stock.price | usd }}</td>
+                        <td class="text-end">{{ stock.amount }}</td>
+                        <td class="text-end">{{ stock.created_at }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

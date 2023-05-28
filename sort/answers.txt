@@ -1,0 +1,18 @@
+sort1 uses: bubble
+
+How do you know?: Sort1 had the bigger difference between the worst scenario (upper bound - unsorted array),
+                and bubble has the "lowest" lower bound meaning that searching through a sorted array will
+                take the least time. random 50000 = 7.579 s; sorted = 0.618 s.
+                upper bound is O(n^2)
+                lower bound is Omega(n)
+
+sort2 uses: merge
+
+How do you know?: sort2 took the least time when sorting a random array of 50000 numbers (real = 0.579 s). The sorting
+                technique that has the lowest upper bound is merge sorting (omega(n.logn)), meaning that is equivalent to sort2.
+
+sort3 uses: selection
+
+How do you know?: The lower and upper bounds (or situations) took similar times to complete (sorted 50000 = 3.116 s;
+                random 50000 = 3.272 s) as the selection sorting method has the running time of O(n^2) and Omega(n^2), not presenting a
+                major improvement from sorted to unsorted.

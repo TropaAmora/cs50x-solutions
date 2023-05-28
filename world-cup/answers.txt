@@ -1,0 +1,26 @@
+Times:
+
+10 simulations: 0m0.024s
+100 simulations: 0m0.025s
+1000 simulations: 0m0.033s
+10000 simulations: 0m0.096s
+100000 simulations: 0m0.776s
+1000000 simulations: 0m7.352s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+With a small number of simulations we reduce the sample of trials that the program has to
+run, so the data is not large enough to give the chance to every team to register a tournament
+win, putting a greater emphasys on chance (or luck). As we increase the number of simulations
+we start to get better data because it becames less reliable on luck since better teams, in
+theory will win more. In my opinion, after 10000 simulations, the results became realistic
+enough, but because of the random essence of the program, the higher the number of simulations
+the closer the results are to reality.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+It seems like the predictions stabilized after about 400 to 750 simulations, since there were
+some outliers before 400 simulations.
